@@ -8,13 +8,25 @@
 int main()
 {
   // Types
-  char x;
+  char x; // 8 bits
   x = 'x';
-  int y;
+  int y; /* 4 bytes */
   y = 1;
-  float z;
+  float z; /* 32 bits */
   z = 3.1f; // ! f
-  double w = 1.618f; // ! f
+  double w = 1.618f; // ! f, 64 bits. IEEE754 standard
+
+  //  modifiers
+
+  unsigned int a;
+  unsigned char b;
+  signed int aa;
+  signed char bb;
+  long int aaaa;
+  long double bbb;
+  short int aaa;
+
+  // format specifiers
 
   printf("%c\n", x); // %c for char, \n new line
   printf("%d\n", y); // %d for int
