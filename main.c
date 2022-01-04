@@ -31,6 +31,14 @@ int main()
   printf("%c\n", x); // %c for char, \n new line
   printf("%d\n", y); // %d for int
   printf("%f\n", z); // %f for float, o.xf for x precision
+  /*
+
+  %p pointer
+  %s string
+  %% percentage
+  %n nothing
+
+  */
 
   return 0;
 }
