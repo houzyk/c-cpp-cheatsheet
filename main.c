@@ -1,11 +1,12 @@
 // Entry Point
 
 #include <stdio.h>
+#include <math.h>
 
 // constants
 #define CONSTANT 1
 
-int main()
+char main()
 {
   // Types
   char x; // 8 bits
@@ -37,10 +38,15 @@ int main()
   %s string
   %% percentage
   %n nothing
+  \\ for \
 
   */
 
-  return 0;
+  // math functions
+  sqrt(4.0);
+
+
+  return (char) 0; // explicitly casting 0 as a char
 }
 
 // Compilation: gcc <filename.c> -o <filename>
