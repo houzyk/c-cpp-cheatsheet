@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h> // boolean library, In C, boolean values TRUE and FALSE are represented by 1 and 0.
 
 // constants
 #define CONSTANT 1
@@ -49,5 +50,8 @@ char main()
   return (char) 0; // explicitly casting 0 as a char
 }
 
+void example (char *string) {
+  // add a star to allow for unknown lettered string being an array for chars
+}
 // Compilation: gcc <filename.c> -o <filename>
 // Execution: ./<filename>
