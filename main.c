@@ -7,7 +7,10 @@
 // constants
 #define CONSTANT 1
 
-char main()
+// prototyping
+void example(char *string);
+
+void main()
 {
   // Types
   char x; // 8 bits
@@ -45,9 +48,12 @@ char main()
 
   // math functions
   sqrt(4.0);
+  pow(2.0, 3.0);
+  log(2.0);
 
+  (char) 0; // explicitly casting 0 as a char
 
-  return (char) 0; // explicitly casting 0 as a char
+  return 0;
 }
 
 void example (char *string) {
