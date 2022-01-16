@@ -3,14 +3,20 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h> // boolean library, In C, boolean values TRUE and FALSE are represented by 1 and 0.
+#include <string.h>
 
 // constants
 #define CONSTANT 1
 
 // prototyping
 void example(char *string);
+void conditional(void);
+int recursion (int);
+void loops(void);
+void arrays(void);
 
-void main()
+
+int main(int argc, char* argv[]) // takes command line inputs
 {
   // Types
   char x; // 8 bits
@@ -53,11 +59,88 @@ void main()
 
   (char) 0; // explicitly casting 0 as a char
 
+
+
   return 0;
 }
 
 void example (char *string) {
   // add a star to allow for unknown lettered string being an array for chars
 }
-// Compilation: gcc <filename.c> -o <filename>
-// Execution: ./<filename>
+
+void conditional (void) {
+  // conditionals
+  bool condition = true;
+  if (condition)
+  {
+    printf("");
+  } else if (!condition) {
+    printf("");
+  } else {
+    printf("");
+  }
+}
+
+int recursion(int arg) {
+  // base case
+  if (arg < 0) return 0;
+  // recursive case
+  arg--;
+  recursion(arg);
+}
+
+void loops (void) {
+  // for loop
+  for (int i = 0; i < 10; i++)
+  {
+    /* code */
+  }
+  // while loop
+  int i = 0;
+  while (i < 10)
+  {
+    /* code */
+    i++;
+  }
+
+  // do loop always does first iteration
+  do
+  {
+    /* code */
+    i++;
+  } while (i < 10);
+}
+
+void arrays(void) {
+  // declaring an array of 5 ints, doubles, strings
+  int intArray[5];
+  double doubleArray[5];
+  char* stringArray[5];
+
+  // multidimensional 2 by 2 array
+  int multArray[2][2];
+
+  // strings
+  // ! declare strings immediately
+  char stringExample[6];
+
+  stringExample[0] = 's';
+  stringExample[1] = 'f';
+  stringExample[2] = 'h';
+  stringExample[3] = 'q';
+  stringExample[4] = 'q';
+  stringExample[5] = 0; // signifies end of string
+
+  char stringExample2[6];
+  char stringExample2[6] = {'s', 'e', 'q', 'g', 'm', 0};
+
+  char stringExample3[] = "aaaaa";
+
+  // * methods on strings
+  strcpy(stringExample, stringExample2); // copies 2 to use instead of secondary assingment
+  strlen(stringExample2); // length
+  strcat(stringExample2, stringExample3); // stringExample2 + stringExample3 in js
+}
+
+    // Compilation: gcc <filename.c> -o <filename>
+    // Execution: ./<filename>
