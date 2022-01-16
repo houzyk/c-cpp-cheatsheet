@@ -14,7 +14,7 @@ void conditional(void);
 int recursion (int);
 void loops(void);
 void arrays(void);
-
+void ADT(void);
 
 int main(int argc, char* argv[]) // takes command line inputs
 {
@@ -140,6 +140,26 @@ void arrays(void) {
   strcpy(stringExample, stringExample2); // copies 2 to use instead of secondary assingment
   strlen(stringExample2); // length
   strcat(stringExample2, stringExample3); // stringExample2 + stringExample3 in js
+}
+
+void ADT (void) {
+  // abstract data structures
+
+  // creates a country data structure
+  struct Country
+  {
+    char* name;
+    double longitude;
+    double latitude;
+    int phone;
+  };
+
+  // initialises a new country fo ADT Country
+  struct Country mauritius;
+  strcpy(mauritius.name, "Mauritius");
+  mauritius.latitude = 0.123;
+  mauritius.longitude = 0.123;
+  mauritius.phone = 230;
 }
 
     // Compilation: gcc <filename.c> -o <filename>
